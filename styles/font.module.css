@@ -1,0 +1,26 @@
+.workSans {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', Helvetica;
+}
+
+.robotoMono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.normal {
+    composes: workSans;
+    font-weight: 400;
+}
+
+.title {
+    composes: montserrat;
+    font-weight: 800;
+}
+
+.paragraph {
+    composes: normal;
+    line-height: 1.5;
+}

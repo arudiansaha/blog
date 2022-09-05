@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.image {
+    border-radius: 99px;
+}
+
+.name {
+    composes: normal from './font.module.css';
+    font-style: oblique;
+}

@@ -1,0 +1,51 @@
+.title {
+    composes: title from './font.module.css';
+    font-size: 6rem;
+    margin-block: 1rem;
+}
+
+.subTitle {
+    composes: title from './font.module.css';
+    width: fit-content;
+}
+
+.subTitle:hover {
+    color: var(--c-blue1);
+}
+
+.excerpt {
+    composes: paragraph from './font.module.css';
+}
+
+.sectionInfo {
+    composes: excerpt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: min(100% - 3rem, 70ch);
+    margin-inline: auto;
+}
+
+.section {
+    composes: container;
+    margin-block-end: 1rem;
+}
+
+.header {
+    composes: container;
+}
+
+@media (max-width: 900px) {
+    .title {
+        display: none;
+    }
+
+    .sectionInfo {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+    }
+}

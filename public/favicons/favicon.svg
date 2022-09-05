@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="135.46667mm"
+   height="135.46667mm"
+   viewBox="0 0 135.46667 135.46667"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.4122263,8.0439499)">
+    <rect
+       style="fill:#41b9e1;fill-opacity:0;stroke-width:0.229288"
+       id="rect3015"
+       width="135.46666"
+       height="135.46666"
+       x="3.4122264"
+       y="-8.0439501"
+       inkscape:export-filename="favicon-16x16.png"
+       inkscape:export-xdpi="3"
+       inkscape:export-ydpi="3" />
+    <g
+       id="g3032"
+       transform="matrix(1.0958481,0,0,1.0958481,0.41058652,-8.1078232)">
+      <circle
+         style="fill:#41b9e1;fill-opacity:1;stroke-width:0.264583"
+         id="path234"
+         cx="76.832901"
+         cy="50.3036"
+         r="42.053436" />
+      <rect
+         style="fill:#6941e1;fill-opacity:1;stroke-width:0.264583"
+         id="rect842"
+         width="83.366577"
+         height="83.366577"
+         x="10.209967"
+         y="32.117931" />
+    </g>
+  </g>
+</svg>

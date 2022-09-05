@@ -1,0 +1,65 @@
+.common {
+    composes: normal from './font.module.css';
+    font-weight: 700;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.normal {
+    cursor: pointer;
+}
+
+.primary {
+    composes: common;
+    border-color: var(--c-blue1);
+    background-color: var(--c-blue1);
+    color: var(--c-white1);
+}
+
+.primary:active {
+    border-color: var(--c-blue2);
+    background-color: var(--c-blue2);
+}
+
+.secondary {
+    composes: common;
+    border-color: var(--c-blue1);
+    background-color: transparent;
+    color: var(--c-blue1);
+}
+
+.secondary:active {
+    border-color: var(--c-blue2);
+    color: var(--c-blue2);
+}
+
+.danger {
+    composes: common;
+    border-color: var(--c-red1);
+    background-color: var(--c-red1);
+    color: var(--c-white1);
+}
+
+.danger:active {
+    border-color: var(--c-red2);
+    background-color: var(--c-red2);
+}
+
+.disabled {
+    composes: common;
+    border-color: var(--c-white4);
+    background-color: var(--c-white2);
+    color: var(--c-white4);
+}
+
+@media (prefers-color-scheme: dark) {
+    .disabled {
+        border-color: var(--c-dark4);
+        background-color: var(--c-dark2);
+        color: var(--c-dark4);
+    }
+}

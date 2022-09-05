@@ -1,0 +1,18 @@
+.position {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.emoji {
+    composes: position;
+    composes: title from './font.module.css';
+    font-size: clamp(4rem, 8vw, 12rem);
+    font-weight: 900;
+}
+
+.text {
+    composes: position;
+    composes: normal from './font.module.css';
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}

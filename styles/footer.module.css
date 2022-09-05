@@ -1,0 +1,72 @@
+.background {
+    margin-block-start: auto;
+    border-top: 1px solid var(--c-white3);
+    background-color: var(--c-white2);
+}
+
+.container {
+    width: min(100% - 3rem, 100%);
+    margin-inline: auto;
+}
+
+.wrapper {
+    composes: container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    composes: normal from './font.module.css';
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.social a {
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.social a:hover {
+    color: var(--c-white1);
+    background-color: var(--c-blue1);
+    border-radius: 0.75rem;
+    transition: all ease-out 600ms;
+}
+
+@media (max-width: 510px) {
+    .wrapper {
+        justify-content: flex-start;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social a {
+        padding: 0;
+        border: none;
+    }
+
+    .social a:hover {
+        border: none;
+        color: var(--c-dark1);
+        background: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .social a:hover {
+            color: var(--c-white1);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .background {
+        border-color: var(--c-dark3);
+        background-color: var(--c-dark2);
+    }
+}
