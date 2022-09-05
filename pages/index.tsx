@@ -12,7 +12,7 @@ export default function HomePage({ posts }: Props) {
   return (
     <>
       <Head>
-        <title>Rizky Ardiansyah's blog</title>
+        <title>{`Rizky Ardiansyah's blog`}</title>
       </Head>
 
       <HeroPost posts={posts} />
