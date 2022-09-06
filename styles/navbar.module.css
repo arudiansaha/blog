@@ -12,7 +12,7 @@
     transition: background-size ease 500ms;
 }
 
-.navLink a:is(:hover, :focus) {
+.navLink a:hover {
     background-size: 100% 2px;
 }
 

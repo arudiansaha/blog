@@ -1,26 +1,41 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
-import HeroPost from '../components/hero-post'
+import HeroHeader from '../components/hero-header'
+import HeroBody from '../components/hero-body'
 import { getAllPosts } from '../lib/api'
 import type { ReactElement } from 'react'
 
 type Props = {
-  posts: Array<string>,
+  posts: Array<any>,
 }
 
-export default function HomePage({ posts }: Props) {
+export default function HeroPost({ posts }: Props) {
   return (
     <>
       <Head>
         <title>{`Rizky Ardiansyah's blog`}</title>
       </Head>
 
-      <HeroPost posts={posts} />
+      {posts.map((post) => (
+        <section key={post.slug}>
+          <HeroHeader
+            title={post.title}
+            slug={post.slug}
+            author={post.author}
+            date={post.date}
+          />
+
+          <HeroBody
+            excerpt={post.excerpt}
+            slug={post.slug}
+          />
+        </section>
+      ))}
     </>
   )
 }
 
-HomePage.getLayout = function getLayout(page: ReactElement) {
+HeroPost.getLayout = function getLayout(page: ReactElement) {
   return <Layout title="Blog.">{page}</Layout>
 }
 

@@ -1,15 +1,12 @@
 .title {
     composes: title from './font.module.css';
-    font-size: 6rem;
-    margin-block: 1rem;
-}
-
-.subTitle {
-    composes: title from './font.module.css';
     width: fit-content;
+    margin-block: 1rem;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 300;
 }
 
-.subTitle:hover {
+.title:active {
     color: var(--c-blue1);
 }
 
@@ -20,6 +17,7 @@
 .sectionInfo {
     composes: excerpt;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -36,16 +34,4 @@
 
 .header {
     composes: container;
-}
-
-@media (max-width: 900px) {
-    .title {
-        display: none;
-    }
-
-    .sectionInfo {
-        flex-direction: column;
-        justify-content: unset;
-        align-items: flex-start;
-    }
 }

@@ -46,6 +46,10 @@
     transition: background-size ease 500ms;
 }
 
+.navLink a:hover {
+    background-size: 100% 2px;
+}
+
 @media (prefers-color-scheme: dark) {
     .wrapper {
         border-left-color: var(--c-dark3);

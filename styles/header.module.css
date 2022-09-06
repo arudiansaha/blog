@@ -22,11 +22,11 @@
 .title {
     composes: title from './font.module.css';
     font-weight: 900;
-    background-image: var(--c-gradient);
+    /* background-image: var(--c-gradient);
     background-clip: text;
     background-size: 300% 100%;
     -webkit-text-fill-color: transparent;
-    animation: gradientTitle 8s linear infinite alternate;
+    animation: gradientTitle 8s linear infinite alternate; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,7 +36,7 @@
     }
 }
 
-@keyframes gradientTitle {
+/* @keyframes gradientTitle {
     0% {
         background-position: 0%;
     }
@@ -44,4 +44,4 @@
     100% {
         background-position: 100%;
     }
-}
+} */

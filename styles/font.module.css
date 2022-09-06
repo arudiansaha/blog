@@ -6,6 +6,10 @@
     font-family: 'Montserrat', Helvetica;
 }
 
+.raleway {
+    font-family: 'Raleway', Helvetica;
+}
+
 .robotoMono {
     font-family: 'Roboto Mono', monospace;
 }
@@ -16,7 +20,7 @@
 }
 
 .title {
-    composes: montserrat;
+    composes: raleway;
     font-weight: 800;
 }
 
